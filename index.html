@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Arturo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="hero">
+
+        <div class="overlay">
+
+            <h1>📚 Biblioteca de Arturo</h1>
+
+            <p>
+                Una colección personal de ciencia, fantasía, thriller y literatura.
+            </p>
+
+            <div class="estadisticas">
+
+                <div class="dato">
+                    <h2 id="totalLibros">0</h2>
+                    <span>Libros</span>
+                </div>
+
+                <div class="dato">
+                    <h2 id="totalAutores">0</h2>
+                    <span>Autores</span>
+                </div>
+
+                <div class="dato">
+                    <h2>5</h2>
+                    <span>Categorías</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= BUSCADOR ================= -->
+
+    <section class="busqueda">
+
+        <div class="contenedorBusqueda">
+
+            <input
+                type="text"
+                id="buscar"
+                placeholder="🔍 Buscar por título o autor..."
+            >
+
+            <select id="categoria">
+
+                <option value="Todos">Todas las categorías</option>
+
+                <option value="Ciencia">🧪 Ciencia</option>
+
+                <option value="Fantasía">🧙 Fantasía</option>
+
+                <option value="Thriller">🔎 Thriller</option>
+
+                <option value="Literatura">📖 Literatura</option>
+
+                <option value="Otros">📚 Otros</option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATALOGO ================= -->
+
+    <main>
+
+        <section id="catalogo" class="catalogo">
+
+            <!-- Las tarjetas aparecerán aquí automáticamente -->
+
+        </section>
+
+    </main>
+
+    <!-- ================= MODAL ================= -->
+
+    <div id="modal" class="modal">
+
+        <div class="modalContenido">
+
+            <span class="cerrar">&times;</span>
+
+            <img id="modalImagen" src="" alt="">
+
+            <div class="modalInfo">
+
+                <h2 id="modalTitulo"></h2>
+
+                <h3 id="modalAutor"></h3>
+
+                <p class="categoriaLibro" id="modalCategoria"></p>
+
+                <p id="modalSinopsis"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Biblioteca de Arturo © 2026</h3>
+
+        <p>
+            Proyecto personal inspirado en Goodreads.
+        </p>
+
+    </footer>
+
+    <script src="libros.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
